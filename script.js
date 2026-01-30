@@ -299,6 +299,17 @@ function printResults() {
     window.print();
 }
 
+// Print worksheet (blank for students)
+function printWorksheet() {
+    // Add a class to body to trigger worksheet print styles
+    document.body.classList.add('printing-worksheet');
+    window.print();
+    // Remove the class after printing
+    setTimeout(() => {
+        document.body.classList.remove('printing-worksheet');
+    }, 1000);
+}
+
 // Restart review
 function restartReview() {
     currentScore = 0;

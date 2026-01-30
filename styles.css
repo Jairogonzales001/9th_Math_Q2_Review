@@ -364,11 +364,18 @@ body {
     background: #5eead4;
 }
 
+/* Print Worksheet Container */
+.print-worksheet-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 /* Print Styles */
 @media print {
     body {
-        background: white;
-        padding: 20px;
+        background: white !important;
+        padding: 10px !important;
+        font-size: 11pt;
     }
 
     .container {
@@ -376,31 +383,127 @@ body {
     }
 
     .header {
-        background: #0d9488;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
+        background: #0d9488 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        padding: 15px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .header h1 {
+        font-size: 16pt !important;
+        margin-bottom: 5px !important;
+    }
+
+    .subtitle {
+        font-size: 9pt !important;
     }
 
     .progress-container,
-    .nav-buttons {
+    .score-display,
+    .print-worksheet-container,
+    .nav-buttons,
+    .final-results-box,
+    .result-inline {
         display: none !important;
     }
 
     .content-card {
         box-shadow: none;
-        page-break-inside: avoid;
+        padding: 10px !important;
     }
 
-    .choice-btn {
-        background: white;
-        color: #333;
-        border: 1px solid #333;
-        box-shadow: none;
+    .phase-header {
+        margin-bottom: 15px !important;
+        padding-bottom: 10px !important;
+    }
+
+    .phase-header h2 {
+        font-size: 14pt !important;
+    }
+
+    .instructions {
+        font-size: 10pt !important;
     }
 
     .topic-header {
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
+        background: #e6fffa !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        padding: 8px 12px !important;
+        margin: 15px 0 10px 0 !important;
+        page-break-after: avoid;
+    }
+
+    .topic-header h3 {
+        font-size: 11pt !important;
+    }
+
+    .standard-badge {
+        font-size: 8pt !important;
+        padding: 3px 8px !important;
+    }
+
+    .independent-problem {
+        padding: 12px !important;
+        margin-bottom: 10px !important;
+        page-break-inside: avoid;
+        border: 1px solid #ccc !important;
+        background: white !important;
+    }
+
+    .independent-problem p {
+        font-size: 10pt !important;
+        margin-bottom: 8px !important;
+    }
+
+    .choices {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 5px !important;
+    }
+
+    .choice-btn {
+        background: white !important;
+        color: #333 !important;
+        border: 1px solid #999 !important;
+        box-shadow: none !important;
+        padding: 8px 12px !important;
+        font-size: 10pt !important;
+        text-align: left !important;
+        border-radius: 5px !important;
+        min-width: auto !important;
+    }
+
+    /* Answer blank for worksheet */
+    .independent-problem::after {
+        content: "Answer: _____";
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 10pt;
+    }
+}
+
+/* Worksheet-specific print styles */
+body.printing-worksheet .result-inline,
+body.printing-worksheet .final-results-box {
+    display: none !important;
+}
+
+@media print {
+    body.printing-worksheet .independent-problem.answered,
+    body.printing-worksheet .independent-problem.correct-answer,
+    body.printing-worksheet .independent-problem.incorrect-answer {
+        border-color: #ccc !important;
+        background: white !important;
+    }
+
+    body.printing-worksheet .choice-btn.selected-correct,
+    body.printing-worksheet .choice-btn.selected-incorrect {
+        background: white !important;
+        color: #333 !important;
+        border: 1px solid #999 !important;
     }
 }
 
