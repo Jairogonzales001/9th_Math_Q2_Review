@@ -19,300 +19,630 @@
             <div class="progress-bar">
                 <div class="progress-fill" id="progressFill"></div>
             </div>
-            <span class="progress-text" id="progressText">0/20</span>
+            <span class="progress-text" id="progressText">0/50</span>
         </div>
 
         <!-- Score Display -->
         <div class="score-display">
-            Score: <span id="currentScore">0</span>/<span id="totalQuestions">20</span>
+            Score: <span id="currentScore">0</span>/<span id="totalQuestions">50</span>
         </div>
 
         <!-- Review Questions -->
         <div class="content-card active" id="reviewContent">
             <div class="phase-header">
                 <h2>Q2 Review Questions</h2>
-                <p class="instructions">Answer all 20 questions to complete the review. Good luck!</p>
+                <p class="instructions">Answer all 50 questions to complete the review. Good luck!</p>
             </div>
 
             <div class="independent-problems">
-                <!-- Topic 1: Rigid Transformations and Congruence (29.B) -->
+                <!-- ==================== TOPIC 1: Rigid Transformations and Congruence (29.B) ==================== -->
                 <div class="topic-header">
-                    <h3>Topic: Rigid Transformations and Congruence</h3>
+                    <h3>Topic 1: Rigid Transformations and Congruence</h3>
                     <span class="standard-badge">MA.912.GR.2.6</span>
                 </div>
 
                 <div class="independent-problem" id="problem1">
                     <p><strong>1.</strong> Which of the following is NOT a rigid transformation?</p>
                     <div class="choices">
-                        <button class="choice-btn" onclick="checkAnswer(1, 'wrong1')">Reflection</button>
-                        <button class="choice-btn" onclick="checkAnswer(1, 'wrong2')">Rotation</button>
-                        <button class="choice-btn" onclick="checkAnswer(1, 'correct')">Dilation</button>
-                        <button class="choice-btn" onclick="checkAnswer(1, 'wrong3')">Translation</button>
+                        <button class="choice-btn" onclick="checkAnswer(1, 'B')">A) Reflection</button>
+                        <button class="choice-btn" onclick="checkAnswer(1, 'B')">B) Dilation</button>
+                        <button class="choice-btn" onclick="checkAnswer(1, 'C')">C) Rotation</button>
+                        <button class="choice-btn" onclick="checkAnswer(1, 'D')">D) Translation</button>
                     </div>
                     <span class="result-inline" id="result1"></span>
                 </div>
 
                 <div class="independent-problem" id="problem2">
-                    <p><strong>2.</strong> Triangle ABC is transformed to Triangle DEF using a sequence of rigid transformations. If AB = 5 cm, what is the length of DE?</p>
+                    <p><strong>2.</strong> Triangle ABC is transformed to Triangle DEF using a sequence of rigid transformations. If AB = 7 cm, what is the length of DE?</p>
                     <div class="choices">
-                        <button class="choice-btn" onclick="checkAnswer(2, 'correct')">5 cm</button>
-                        <button class="choice-btn" onclick="checkAnswer(2, 'wrong1')">10 cm</button>
-                        <button class="choice-btn" onclick="checkAnswer(2, 'wrong2')">2.5 cm</button>
-                        <button class="choice-btn" onclick="checkAnswer(2, 'wrong3')">Cannot be determined</button>
+                        <button class="choice-btn" onclick="checkAnswer(2, 'A')">A) 14 cm</button>
+                        <button class="choice-btn" onclick="checkAnswer(2, 'B')">B) 3.5 cm</button>
+                        <button class="choice-btn" onclick="checkAnswer(2, 'C')">C) 7 cm</button>
+                        <button class="choice-btn" onclick="checkAnswer(2, 'D')">D) Cannot be determined</button>
                     </div>
                     <span class="result-inline" id="result2"></span>
                 </div>
 
-                <!-- Topic 2: Mapping Figures to Prove Congruence (30.B) -->
-                <div class="topic-header">
-                    <h3>Topic: Mapping Figures to Prove Congruence</h3>
-                    <span class="standard-badge">MA.912.GR.2.6</span>
-                </div>
-
                 <div class="independent-problem" id="problem3">
-                    <p><strong>3.</strong> To prove that two figures are congruent using transformations, you must show that:</p>
+                    <p><strong>3.</strong> After a rigid transformation, which property is ALWAYS preserved?</p>
                     <div class="choices">
-                        <button class="choice-btn" onclick="checkAnswer(3, 'correct')">One figure can be mapped onto the other using only rigid transformations</button>
-                        <button class="choice-btn" onclick="checkAnswer(3, 'wrong1')">The figures have the same area</button>
-                        <button class="choice-btn" onclick="checkAnswer(3, 'wrong2')">The figures have the same perimeter</button>
-                        <button class="choice-btn" onclick="checkAnswer(3, 'wrong3')">One figure is larger than the other</button>
+                        <button class="choice-btn" onclick="checkAnswer(3, 'A')">A) Position</button>
+                        <button class="choice-btn" onclick="checkAnswer(3, 'B')">B) Orientation</button>
+                        <button class="choice-btn" onclick="checkAnswer(3, 'C')">C) Direction facing</button>
+                        <button class="choice-btn" onclick="checkAnswer(3, 'D')">D) Side lengths and angle measures</button>
                     </div>
                     <span class="result-inline" id="result3"></span>
                 </div>
 
                 <div class="independent-problem" id="problem4">
-                    <p><strong>4.</strong> Triangle PQR is reflected over the y-axis and then translated 3 units up to create Triangle P'Q'R'. Which statement is true?</p>
+                    <p><strong>4.</strong> Rectangle ABCD has angle A = 90°. After a rotation, what is the measure of the corresponding angle?</p>
                     <div class="choices">
-                        <button class="choice-btn" onclick="checkAnswer(4, 'correct')">Triangle PQR is congruent to Triangle P'Q'R'</button>
-                        <button class="choice-btn" onclick="checkAnswer(4, 'wrong1')">Triangle P'Q'R' is larger than Triangle PQR</button>
-                        <button class="choice-btn" onclick="checkAnswer(4, 'wrong2')">The triangles are similar but not congruent</button>
-                        <button class="choice-btn" onclick="checkAnswer(4, 'wrong3')">The triangles have different angle measures</button>
+                        <button class="choice-btn" onclick="checkAnswer(4, 'A')">A) 45°</button>
+                        <button class="choice-btn" onclick="checkAnswer(4, 'B')">B) 90°</button>
+                        <button class="choice-btn" onclick="checkAnswer(4, 'C')">C) 180°</button>
+                        <button class="choice-btn" onclick="checkAnswer(4, 'D')">D) It depends on the rotation angle</button>
                     </div>
                     <span class="result-inline" id="result4"></span>
                 </div>
 
-                <!-- Topic 3: Justify Congruence Criteria with Transformations (31.B) -->
-                <div class="topic-header">
-                    <h3>Topic: Justify Congruence Criteria with Transformations</h3>
-                    <span class="standard-badge">MA.912.GR.2.7</span>
-                </div>
-
                 <div class="independent-problem" id="problem5">
-                    <p><strong>5.</strong> Why does AAA (Angle-Angle-Angle) NOT guarantee triangle congruence?</p>
+                    <p><strong>5.</strong> Which statement is TRUE about rigid transformations?</p>
                     <div class="choices">
-                        <button class="choice-btn" onclick="checkAnswer(5, 'correct')">Two triangles can have the same angles but different side lengths (similar, not congruent)</button>
-                        <button class="choice-btn" onclick="checkAnswer(5, 'wrong1')">Angles cannot be measured accurately</button>
-                        <button class="choice-btn" onclick="checkAnswer(5, 'wrong2')">Triangles cannot have three equal angles</button>
-                        <button class="choice-btn" onclick="checkAnswer(5, 'wrong3')">AAA does guarantee congruence</button>
+                        <button class="choice-btn" onclick="checkAnswer(5, 'A')">A) They change the size of figures</button>
+                        <button class="choice-btn" onclick="checkAnswer(5, 'B')">B) They can only be applied to triangles</button>
+                        <button class="choice-btn" onclick="checkAnswer(5, 'C')">C) They preserve distance and angle measure</button>
+                        <button class="choice-btn" onclick="checkAnswer(5, 'D')">D) They always change the orientation</button>
                     </div>
                     <span class="result-inline" id="result5"></span>
                 </div>
 
+                <!-- ==================== TOPIC 2: Mapping Figures to Prove Congruence (30.B) ==================== -->
+                <div class="topic-header">
+                    <h3>Topic 2: Mapping Figures to Prove Congruence</h3>
+                    <span class="standard-badge">MA.912.GR.2.6</span>
+                </div>
+
                 <div class="independent-problem" id="problem6">
-                    <p><strong>6.</strong> The SSS congruence criterion can be justified using transformations because:</p>
+                    <p><strong>6.</strong> To prove that two figures are congruent using transformations, you must show that:</p>
                     <div class="choices">
-                        <button class="choice-btn" onclick="checkAnswer(6, 'wrong1')">All triangles with equal angles are congruent</button>
-                        <button class="choice-btn" onclick="checkAnswer(6, 'correct')">If all three pairs of sides are equal, a sequence of rigid transformations can map one triangle onto the other</button>
-                        <button class="choice-btn" onclick="checkAnswer(6, 'wrong2')">Sides don't matter for congruence</button>
-                        <button class="choice-btn" onclick="checkAnswer(6, 'wrong3')">You need to use a dilation to prove SSS</button>
+                        <button class="choice-btn" onclick="checkAnswer(6, 'A')">A) The figures have the same color</button>
+                        <button class="choice-btn" onclick="checkAnswer(6, 'B')">B) One figure can be mapped onto the other using only rigid transformations</button>
+                        <button class="choice-btn" onclick="checkAnswer(6, 'C')">C) The figures have the same area only</button>
+                        <button class="choice-btn" onclick="checkAnswer(6, 'D')">D) One figure is larger than the other</button>
                     </div>
                     <span class="result-inline" id="result6"></span>
                 </div>
 
-                <!-- Topic 4: Sequences of Transformations (32.B) -->
-                <div class="topic-header">
-                    <h3>Topic: Sequences of Transformations</h3>
-                    <span class="standard-badge">MA.912.GR.2.3</span>
-                </div>
-
                 <div class="independent-problem" id="problem7">
-                    <p><strong>7.</strong> A square is reflected over a vertical line through its center. The result maps the square onto:</p>
+                    <p><strong>7.</strong> Triangle PQR is reflected over the y-axis and then translated 3 units up to create Triangle P'Q'R'. Which statement is true?</p>
                     <div class="choices">
-                        <button class="choice-btn" onclick="checkAnswer(7, 'correct')">Itself</button>
-                        <button class="choice-btn" onclick="checkAnswer(7, 'wrong1')">A different square</button>
-                        <button class="choice-btn" onclick="checkAnswer(7, 'wrong2')">A rectangle</button>
-                        <button class="choice-btn" onclick="checkAnswer(7, 'wrong3')">A rotated square</button>
+                        <button class="choice-btn" onclick="checkAnswer(7, 'A')">A) Triangle P'Q'R' is larger than Triangle PQR</button>
+                        <button class="choice-btn" onclick="checkAnswer(7, 'B')">B) The triangles have different angle measures</button>
+                        <button class="choice-btn" onclick="checkAnswer(7, 'C')">C) The triangles are similar but not congruent</button>
+                        <button class="choice-btn" onclick="checkAnswer(7, 'D')">D) Triangle PQR is congruent to Triangle P'Q'R'</button>
                     </div>
                     <span class="result-inline" id="result7"></span>
                 </div>
 
                 <div class="independent-problem" id="problem8">
-                    <p><strong>8.</strong> Which transformation sequence would map a figure onto a SIMILAR (but not congruent) figure?</p>
+                    <p><strong>8.</strong> Figure A can be mapped to Figure B using a translation followed by a reflection. What can you conclude?</p>
                     <div class="choices">
-                        <button class="choice-btn" onclick="checkAnswer(8, 'wrong1')">Reflection then translation</button>
-                        <button class="choice-btn" onclick="checkAnswer(8, 'wrong2')">Rotation then reflection</button>
-                        <button class="choice-btn" onclick="checkAnswer(8, 'correct')">Translation then dilation</button>
-                        <button class="choice-btn" onclick="checkAnswer(8, 'wrong3')">Reflection then rotation</button>
+                        <button class="choice-btn" onclick="checkAnswer(8, 'A')">A) Figure A is congruent to Figure B</button>
+                        <button class="choice-btn" onclick="checkAnswer(8, 'B')">B) Figure A is similar to Figure B</button>
+                        <button class="choice-btn" onclick="checkAnswer(8, 'C')">C) Figure B is twice as large as Figure A</button>
+                        <button class="choice-btn" onclick="checkAnswer(8, 'D')">D) The figures have different shapes</button>
                     </div>
                     <span class="result-inline" id="result8"></span>
                 </div>
 
-                <!-- Topic 5: Transformation Sequences and Symmetry (33.B) -->
-                <div class="topic-header">
-                    <h3>Topic: Transformation Sequences and Symmetry</h3>
-                    <span class="standard-badge">MA.912.GR.2.3</span>
-                </div>
-
                 <div class="independent-problem" id="problem9">
-                    <p><strong>9.</strong> An equilateral triangle has how many lines of symmetry?</p>
+                    <p><strong>9.</strong> If quadrilateral WXYZ can be mapped onto quadrilateral ABCD using only a 90° rotation, what must be true?</p>
                     <div class="choices">
-                        <button class="choice-btn" onclick="checkAnswer(9, 'wrong1')">1</button>
-                        <button class="choice-btn" onclick="checkAnswer(9, 'wrong2')">2</button>
-                        <button class="choice-btn" onclick="checkAnswer(9, 'correct')">3</button>
-                        <button class="choice-btn" onclick="checkAnswer(9, 'wrong3')">6</button>
+                        <button class="choice-btn" onclick="checkAnswer(9, 'A')">A) WXYZ is smaller than ABCD</button>
+                        <button class="choice-btn" onclick="checkAnswer(9, 'B')">B) They have different perimeters</button>
+                        <button class="choice-btn" onclick="checkAnswer(9, 'C')">C) WXYZ ≅ ABCD (they are congruent)</button>
+                        <button class="choice-btn" onclick="checkAnswer(9, 'D')">D) They have different areas</button>
                     </div>
                     <span class="result-inline" id="result9"></span>
                 </div>
 
                 <div class="independent-problem" id="problem10">
-                    <p><strong>10.</strong> A figure is rotated 90° clockwise and then rotated 90° counterclockwise. The final image compared to the original is:</p>
+                    <p><strong>10.</strong> Which sequence of transformations would NOT preserve congruence?</p>
                     <div class="choices">
-                        <button class="choice-btn" onclick="checkAnswer(10, 'correct')">In the same position (maps onto itself)</button>
-                        <button class="choice-btn" onclick="checkAnswer(10, 'wrong1')">Rotated 180°</button>
-                        <button class="choice-btn" onclick="checkAnswer(10, 'wrong2')">Reflected</button>
-                        <button class="choice-btn" onclick="checkAnswer(10, 'wrong3')">Translated</button>
+                        <button class="choice-btn" onclick="checkAnswer(10, 'A')">A) Reflection then rotation</button>
+                        <button class="choice-btn" onclick="checkAnswer(10, 'B')">B) Translation then reflection</button>
+                        <button class="choice-btn" onclick="checkAnswer(10, 'C')">C) Dilation then translation</button>
+                        <button class="choice-btn" onclick="checkAnswer(10, 'D')">D) Rotation then translation</button>
                     </div>
                     <span class="result-inline" id="result10"></span>
                 </div>
 
-                <!-- Topic 6: Draw Transformed Figures on Coordinate Plane (34.B) -->
+                <!-- ==================== TOPIC 3: Justify Congruence Criteria with Transformations (31.B) ==================== -->
                 <div class="topic-header">
-                    <h3>Topic: Draw Transformed Figures on Coordinate Plane</h3>
-                    <span class="standard-badge">MA.912.GR.2.5</span>
+                    <h3>Topic 3: Justify Congruence Criteria with Transformations</h3>
+                    <span class="standard-badge">MA.912.GR.2.7</span>
                 </div>
 
                 <div class="independent-problem" id="problem11">
-                    <p><strong>11.</strong> Point A(3, 2) is reflected over the x-axis. What are the coordinates of A'?</p>
+                    <p><strong>11.</strong> Why does AAA (Angle-Angle-Angle) NOT guarantee triangle congruence?</p>
                     <div class="choices">
-                        <button class="choice-btn" onclick="checkAnswer(11, 'wrong1')">(-3, 2)</button>
-                        <button class="choice-btn" onclick="checkAnswer(11, 'correct')">(3, -2)</button>
-                        <button class="choice-btn" onclick="checkAnswer(11, 'wrong2')">(-3, -2)</button>
-                        <button class="choice-btn" onclick="checkAnswer(11, 'wrong3')">(2, 3)</button>
+                        <button class="choice-btn" onclick="checkAnswer(11, 'A')">A) Angles cannot be measured accurately</button>
+                        <button class="choice-btn" onclick="checkAnswer(11, 'B')">B) Two triangles can have the same angles but different side lengths</button>
+                        <button class="choice-btn" onclick="checkAnswer(11, 'C')">C) Triangles cannot have three equal angles</button>
+                        <button class="choice-btn" onclick="checkAnswer(11, 'D')">D) AAA does guarantee congruence</button>
                     </div>
                     <span class="result-inline" id="result11"></span>
                 </div>
 
                 <div class="independent-problem" id="problem12">
-                    <p><strong>12.</strong> Point B(4, 1) is translated 3 units left and 2 units up. What are the coordinates of B'?</p>
+                    <p><strong>12.</strong> The SSS congruence criterion can be justified using transformations because:</p>
                     <div class="choices">
-                        <button class="choice-btn" onclick="checkAnswer(12, 'correct')">(1, 3)</button>
-                        <button class="choice-btn" onclick="checkAnswer(12, 'wrong1')">(7, 3)</button>
-                        <button class="choice-btn" onclick="checkAnswer(12, 'wrong2')">(1, -1)</button>
-                        <button class="choice-btn" onclick="checkAnswer(12, 'wrong3')">(7, -1)</button>
+                        <button class="choice-btn" onclick="checkAnswer(12, 'A')">A) All triangles with equal angles are congruent</button>
+                        <button class="choice-btn" onclick="checkAnswer(12, 'B')">B) Sides don't matter for congruence</button>
+                        <button class="choice-btn" onclick="checkAnswer(12, 'C')">C) If all three pairs of sides are equal, rigid transformations can map one triangle onto the other</button>
+                        <button class="choice-btn" onclick="checkAnswer(12, 'D')">D) You need to use a dilation to prove SSS</button>
                     </div>
                     <span class="result-inline" id="result12"></span>
                 </div>
 
-                <!-- Topic 7: Multiple Transformations Practice (35.B) -->
-                <div class="topic-header">
-                    <h3>Topic: Multiple Transformations Practice</h3>
-                    <span class="standard-badge">MA.912.GR.2.5</span>
-                </div>
-
                 <div class="independent-problem" id="problem13">
-                    <p><strong>13.</strong> Point C(2, 4) is rotated 180° about the origin, then translated 1 unit right. What are the final coordinates?</p>
+                    <p><strong>13.</strong> Which congruence criterion requires two sides and the INCLUDED angle to be equal?</p>
                     <div class="choices">
-                        <button class="choice-btn" onclick="checkAnswer(13, 'wrong1')">(-2, -4)</button>
-                        <button class="choice-btn" onclick="checkAnswer(13, 'correct')">(-1, -4)</button>
-                        <button class="choice-btn" onclick="checkAnswer(13, 'wrong2')">(3, 4)</button>
-                        <button class="choice-btn" onclick="checkAnswer(13, 'wrong3')">(-3, -4)</button>
+                        <button class="choice-btn" onclick="checkAnswer(13, 'A')">A) SSS</button>
+                        <button class="choice-btn" onclick="checkAnswer(13, 'B')">B) AAS</button>
+                        <button class="choice-btn" onclick="checkAnswer(13, 'C')">C) SAS</button>
+                        <button class="choice-btn" onclick="checkAnswer(13, 'D')">D) ASA</button>
                     </div>
                     <span class="result-inline" id="result13"></span>
                 </div>
 
                 <div class="independent-problem" id="problem14">
-                    <p><strong>14.</strong> Point D(-1, 3) is reflected over the y-axis, then reflected over the x-axis. What are the final coordinates?</p>
+                    <p><strong>14.</strong> Triangle ABC has sides 5, 7, 9. Triangle DEF has sides 5, 7, 9. Using transformations, we can say:</p>
                     <div class="choices">
-                        <button class="choice-btn" onclick="checkAnswer(14, 'correct')">(1, -3)</button>
-                        <button class="choice-btn" onclick="checkAnswer(14, 'wrong1')">(-1, -3)</button>
-                        <button class="choice-btn" onclick="checkAnswer(14, 'wrong2')">(1, 3)</button>
-                        <button class="choice-btn" onclick="checkAnswer(14, 'wrong3')">(-1, 3)</button>
+                        <button class="choice-btn" onclick="checkAnswer(14, 'A')">A) The triangles might not be congruent</button>
+                        <button class="choice-btn" onclick="checkAnswer(14, 'B')">B) We need angle information to determine congruence</button>
+                        <button class="choice-btn" onclick="checkAnswer(14, 'C')">C) The triangles are congruent by SSS</button>
+                        <button class="choice-btn" onclick="checkAnswer(14, 'D')">D) The triangles are similar but not congruent</button>
                     </div>
                     <span class="result-inline" id="result14"></span>
                 </div>
 
-                <!-- Topic 8: Weighted Average of Points on a Line (36.B) -->
-                <div class="topic-header">
-                    <h3>Topic: Weighted Average of Points on a Line</h3>
-                    <span class="standard-badge">MA.912.GR.3.1</span>
-                </div>
-
                 <div class="independent-problem" id="problem15">
-                    <p><strong>15.</strong> Points A and B are at 2 and 10 on a number line. Find the weighted average with weights 3:1 (A:B).</p>
+                    <p><strong>15.</strong> Why does SSA (Side-Side-Angle) NOT always prove congruence?</p>
                     <div class="choices">
-                        <button class="choice-btn" onclick="checkAnswer(15, 'correct')">4</button>
-                        <button class="choice-btn" onclick="checkAnswer(15, 'wrong1')">6</button>
-                        <button class="choice-btn" onclick="checkAnswer(15, 'wrong2')">8</button>
-                        <button class="choice-btn" onclick="checkAnswer(15, 'wrong3')">5</button>
+                        <button class="choice-btn" onclick="checkAnswer(15, 'A')">A) SSA always proves congruence</button>
+                        <button class="choice-btn" onclick="checkAnswer(15, 'B')">B) There can be two different triangles with the same SSA measurements (ambiguous case)</button>
+                        <button class="choice-btn" onclick="checkAnswer(15, 'C')">C) Angles don't matter in congruence</button>
+                        <button class="choice-btn" onclick="checkAnswer(15, 'D')">D) SSA only works for right triangles</button>
                     </div>
                     <span class="result-inline" id="result15"></span>
                 </div>
 
+                <!-- ==================== TOPIC 4: Sequences of Transformations (32.B) ==================== -->
+                <div class="topic-header">
+                    <h3>Topic 4: Sequences of Transformations</h3>
+                    <span class="standard-badge">MA.912.GR.2.3</span>
+                </div>
+
                 <div class="independent-problem" id="problem16">
-                    <p><strong>16.</strong> Point P divides segment AB in the ratio 1:3 from A. If A is at 0 and B is at 12, where is P?</p>
+                    <p><strong>16.</strong> A square is reflected over a vertical line through its center. The result maps the square onto:</p>
                     <div class="choices">
-                        <button class="choice-btn" onclick="checkAnswer(16, 'correct')">3</button>
-                        <button class="choice-btn" onclick="checkAnswer(16, 'wrong1')">4</button>
-                        <button class="choice-btn" onclick="checkAnswer(16, 'wrong2')">9</button>
-                        <button class="choice-btn" onclick="checkAnswer(16, 'wrong3')">6</button>
+                        <button class="choice-btn" onclick="checkAnswer(16, 'A')">A) A different square</button>
+                        <button class="choice-btn" onclick="checkAnswer(16, 'B')">B) A rectangle</button>
+                        <button class="choice-btn" onclick="checkAnswer(16, 'C')">C) Itself</button>
+                        <button class="choice-btn" onclick="checkAnswer(16, 'D')">D) A rotated square</button>
                     </div>
                     <span class="result-inline" id="result16"></span>
                 </div>
 
-                <!-- Topic 9: Distance and Midpoint Formulas (37.B) -->
-                <div class="topic-header">
-                    <h3>Topic: Distance and Midpoint Formulas</h3>
-                    <span class="standard-badge">MA.912.GR.3.2</span>
-                </div>
-
                 <div class="independent-problem" id="problem17">
-                    <p><strong>17.</strong> Find the distance between points (1, 2) and (4, 6).</p>
+                    <p><strong>17.</strong> Which transformation sequence would map a figure onto a SIMILAR (but not congruent) figure?</p>
                     <div class="choices">
-                        <button class="choice-btn" onclick="checkAnswer(17, 'correct')">5</button>
-                        <button class="choice-btn" onclick="checkAnswer(17, 'wrong1')">7</button>
-                        <button class="choice-btn" onclick="checkAnswer(17, 'wrong2')">25</button>
-                        <button class="choice-btn" onclick="checkAnswer(17, 'wrong3')">3</button>
+                        <button class="choice-btn" onclick="checkAnswer(17, 'A')">A) Reflection then translation</button>
+                        <button class="choice-btn" onclick="checkAnswer(17, 'B')">B) Translation then dilation</button>
+                        <button class="choice-btn" onclick="checkAnswer(17, 'C')">C) Rotation then reflection</button>
+                        <button class="choice-btn" onclick="checkAnswer(17, 'D')">D) Reflection then rotation</button>
                     </div>
                     <span class="result-inline" id="result17"></span>
                 </div>
 
                 <div class="independent-problem" id="problem18">
-                    <p><strong>18.</strong> Find the midpoint of segment with endpoints (2, 8) and (6, 2).</p>
+                    <p><strong>18.</strong> A figure undergoes a translation 5 units right, then a translation 5 units left. The final image is:</p>
                     <div class="choices">
-                        <button class="choice-btn" onclick="checkAnswer(18, 'correct')">(4, 5)</button>
-                        <button class="choice-btn" onclick="checkAnswer(18, 'wrong1')">(8, 10)</button>
-                        <button class="choice-btn" onclick="checkAnswer(18, 'wrong2')">(4, 3)</button>
-                        <button class="choice-btn" onclick="checkAnswer(18, 'wrong3')">(2, 5)</button>
+                        <button class="choice-btn" onclick="checkAnswer(18, 'A')">A) 10 units to the right of the original</button>
+                        <button class="choice-btn" onclick="checkAnswer(18, 'B')">B) In the same position as the original</button>
+                        <button class="choice-btn" onclick="checkAnswer(18, 'C')">C) 10 units to the left of the original</button>
+                        <button class="choice-btn" onclick="checkAnswer(18, 'D')">D) Rotated 180°</button>
                     </div>
                     <span class="result-inline" id="result18"></span>
                 </div>
 
-                <!-- Topic 10: Classify Triangles and Quadrilaterals Using Coordinates (38.B) -->
-                <div class="topic-header">
-                    <h3>Topic: Classify Triangles and Quadrilaterals Using Coordinates</h3>
-                    <span class="standard-badge">MA.912.GR.3.2</span>
-                </div>
-
                 <div class="independent-problem" id="problem19">
-                    <p><strong>19.</strong> A triangle has vertices at A(0, 0), B(4, 0), and C(2, 3). The distance AB = 4, AC = sqrt(13), BC = sqrt(13). This triangle is:</p>
+                    <p><strong>19.</strong> What is the result of reflecting a figure over the x-axis, then reflecting it over the x-axis again?</p>
                     <div class="choices">
-                        <button class="choice-btn" onclick="checkAnswer(19, 'wrong1')">Equilateral</button>
-                        <button class="choice-btn" onclick="checkAnswer(19, 'correct')">Isosceles</button>
-                        <button class="choice-btn" onclick="checkAnswer(19, 'wrong2')">Scalene</button>
-                        <button class="choice-btn" onclick="checkAnswer(19, 'wrong3')">Right</button>
+                        <button class="choice-btn" onclick="checkAnswer(19, 'A')">A) The figure returns to its original position</button>
+                        <button class="choice-btn" onclick="checkAnswer(19, 'B')">B) The figure is rotated 180°</button>
+                        <button class="choice-btn" onclick="checkAnswer(19, 'C')">C) The figure is translated</button>
+                        <button class="choice-btn" onclick="checkAnswer(19, 'D')">D) The figure is dilated</button>
                     </div>
                     <span class="result-inline" id="result19"></span>
                 </div>
 
                 <div class="independent-problem" id="problem20">
-                    <p><strong>20.</strong> A quadrilateral has vertices A(0, 0), B(4, 0), C(4, 3), and D(0, 3). Using the distance formula, AB = CD = 4 and BC = AD = 3. Also, slopes show all angles are 90°. This quadrilateral is a:</p>
+                    <p><strong>20.</strong> A regular hexagon is rotated 60° about its center. What happens?</p>
                     <div class="choices">
-                        <button class="choice-btn" onclick="checkAnswer(20, 'wrong1')">Square</button>
-                        <button class="choice-btn" onclick="checkAnswer(20, 'correct')">Rectangle</button>
-                        <button class="choice-btn" onclick="checkAnswer(20, 'wrong2')">Rhombus</button>
-                        <button class="choice-btn" onclick="checkAnswer(20, 'wrong3')">Parallelogram (not rectangle)</button>
+                        <button class="choice-btn" onclick="checkAnswer(20, 'A')">A) It becomes a different hexagon</button>
+                        <button class="choice-btn" onclick="checkAnswer(20, 'B')">B) It maps onto itself</button>
+                        <button class="choice-btn" onclick="checkAnswer(20, 'C')">C) It becomes a pentagon</button>
+                        <button class="choice-btn" onclick="checkAnswer(20, 'D')">D) It doubles in size</button>
                     </div>
                     <span class="result-inline" id="result20"></span>
+                </div>
+
+                <!-- ==================== TOPIC 5: Transformation Sequences and Symmetry (33.B) ==================== -->
+                <div class="topic-header">
+                    <h3>Topic 5: Transformation Sequences and Symmetry</h3>
+                    <span class="standard-badge">MA.912.GR.2.3</span>
+                </div>
+
+                <div class="independent-problem" id="problem21">
+                    <p><strong>21.</strong> An equilateral triangle has how many lines of symmetry?</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(21, 'A')">A) 1</button>
+                        <button class="choice-btn" onclick="checkAnswer(21, 'B')">B) 2</button>
+                        <button class="choice-btn" onclick="checkAnswer(21, 'C')">C) 6</button>
+                        <button class="choice-btn" onclick="checkAnswer(21, 'D')">D) 3</button>
+                    </div>
+                    <span class="result-inline" id="result21"></span>
+                </div>
+
+                <div class="independent-problem" id="problem22">
+                    <p><strong>22.</strong> A figure is rotated 90° clockwise and then rotated 90° counterclockwise. The final image compared to the original is:</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(22, 'A')">A) Rotated 180°</button>
+                        <button class="choice-btn" onclick="checkAnswer(22, 'B')">B) Reflected</button>
+                        <button class="choice-btn" onclick="checkAnswer(22, 'C')">C) In the same position</button>
+                        <button class="choice-btn" onclick="checkAnswer(22, 'D')">D) Translated</button>
+                    </div>
+                    <span class="result-inline" id="result22"></span>
+                </div>
+
+                <div class="independent-problem" id="problem23">
+                    <p><strong>23.</strong> A rectangle (not a square) has how many lines of symmetry?</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(23, 'A')">A) 4</button>
+                        <button class="choice-btn" onclick="checkAnswer(23, 'B')">B) 2</button>
+                        <button class="choice-btn" onclick="checkAnswer(23, 'C')">C) 1</button>
+                        <button class="choice-btn" onclick="checkAnswer(23, 'D')">D) 0</button>
+                    </div>
+                    <span class="result-inline" id="result23"></span>
+                </div>
+
+                <div class="independent-problem" id="problem24">
+                    <p><strong>24.</strong> Does the order of transformations matter?</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(24, 'A')">A) No, order never matters</button>
+                        <button class="choice-btn" onclick="checkAnswer(24, 'B')">B) Yes, different orders can produce different results</button>
+                        <button class="choice-btn" onclick="checkAnswer(24, 'C')">C) Only for dilations</button>
+                        <button class="choice-btn" onclick="checkAnswer(24, 'D')">D) Only for translations</button>
+                    </div>
+                    <span class="result-inline" id="result24"></span>
+                </div>
+
+                <div class="independent-problem" id="problem25">
+                    <p><strong>25.</strong> A square has rotational symmetry of what minimum angle?</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(25, 'A')">A) 45°</button>
+                        <button class="choice-btn" onclick="checkAnswer(25, 'B')">B) 90°</button>
+                        <button class="choice-btn" onclick="checkAnswer(25, 'C')">C) 180°</button>
+                        <button class="choice-btn" onclick="checkAnswer(25, 'D')">D) 360°</button>
+                    </div>
+                    <span class="result-inline" id="result25"></span>
+                </div>
+
+                <!-- ==================== TOPIC 6: Draw Transformed Figures on Coordinate Plane (34.B) ==================== -->
+                <div class="topic-header">
+                    <h3>Topic 6: Draw Transformed Figures on Coordinate Plane</h3>
+                    <span class="standard-badge">MA.912.GR.2.5</span>
+                </div>
+
+                <div class="independent-problem" id="problem26">
+                    <p><strong>26.</strong> Point A(3, 2) is reflected over the x-axis. What are the coordinates of A'?</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(26, 'A')">A) (-3, 2)</button>
+                        <button class="choice-btn" onclick="checkAnswer(26, 'B')">B) (-3, -2)</button>
+                        <button class="choice-btn" onclick="checkAnswer(26, 'C')">C) (3, -2)</button>
+                        <button class="choice-btn" onclick="checkAnswer(26, 'D')">D) (2, 3)</button>
+                    </div>
+                    <span class="result-inline" id="result26"></span>
+                </div>
+
+                <div class="independent-problem" id="problem27">
+                    <p><strong>27.</strong> Point B(4, 1) is translated 3 units left and 2 units up. What are the coordinates of B'?</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(27, 'A')">A) (7, 3)</button>
+                        <button class="choice-btn" onclick="checkAnswer(27, 'B')">B) (1, 3)</button>
+                        <button class="choice-btn" onclick="checkAnswer(27, 'C')">C) (1, -1)</button>
+                        <button class="choice-btn" onclick="checkAnswer(27, 'D')">D) (7, -1)</button>
+                    </div>
+                    <span class="result-inline" id="result27"></span>
+                </div>
+
+                <div class="independent-problem" id="problem28">
+                    <p><strong>28.</strong> Point C(-2, 5) is reflected over the y-axis. What are the coordinates of C'?</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(28, 'A')">A) (-2, -5)</button>
+                        <button class="choice-btn" onclick="checkAnswer(28, 'B')">B) (2, 5)</button>
+                        <button class="choice-btn" onclick="checkAnswer(28, 'C')">C) (2, -5)</button>
+                        <button class="choice-btn" onclick="checkAnswer(28, 'D')">D) (5, -2)</button>
+                    </div>
+                    <span class="result-inline" id="result28"></span>
+                </div>
+
+                <div class="independent-problem" id="problem29">
+                    <p><strong>29.</strong> Point D(1, 4) is rotated 90° counterclockwise about the origin. What are the coordinates of D'?</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(29, 'A')">A) (4, 1)</button>
+                        <button class="choice-btn" onclick="checkAnswer(29, 'B')">B) (-1, -4)</button>
+                        <button class="choice-btn" onclick="checkAnswer(29, 'C')">C) (-4, 1)</button>
+                        <button class="choice-btn" onclick="checkAnswer(29, 'D')">D) (4, -1)</button>
+                    </div>
+                    <span class="result-inline" id="result29"></span>
+                </div>
+
+                <div class="independent-problem" id="problem30">
+                    <p><strong>30.</strong> Point E(2, -3) is rotated 180° about the origin. What are the coordinates of E'?</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(30, 'A')">A) (-2, 3)</button>
+                        <button class="choice-btn" onclick="checkAnswer(30, 'B')">B) (2, 3)</button>
+                        <button class="choice-btn" onclick="checkAnswer(30, 'C')">C) (-2, -3)</button>
+                        <button class="choice-btn" onclick="checkAnswer(30, 'D')">D) (3, -2)</button>
+                    </div>
+                    <span class="result-inline" id="result30"></span>
+                </div>
+
+                <!-- ==================== TOPIC 7: Multiple Transformations Practice (35.B) ==================== -->
+                <div class="topic-header">
+                    <h3>Topic 7: Multiple Transformations Practice</h3>
+                    <span class="standard-badge">MA.912.GR.2.5</span>
+                </div>
+
+                <div class="independent-problem" id="problem31">
+                    <p><strong>31.</strong> Point F(2, 4) is rotated 180° about the origin, then translated 1 unit right. What are the final coordinates?</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(31, 'A')">A) (-2, -4)</button>
+                        <button class="choice-btn" onclick="checkAnswer(31, 'B')">B) (-1, -4)</button>
+                        <button class="choice-btn" onclick="checkAnswer(31, 'C')">C) (3, 4)</button>
+                        <button class="choice-btn" onclick="checkAnswer(31, 'D')">D) (-3, -4)</button>
+                    </div>
+                    <span class="result-inline" id="result31"></span>
+                </div>
+
+                <div class="independent-problem" id="problem32">
+                    <p><strong>32.</strong> Point G(-1, 3) is reflected over the y-axis, then reflected over the x-axis. What are the final coordinates?</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(32, 'A')">A) (-1, -3)</button>
+                        <button class="choice-btn" onclick="checkAnswer(32, 'B')">B) (1, 3)</button>
+                        <button class="choice-btn" onclick="checkAnswer(32, 'C')">C) (-1, 3)</button>
+                        <button class="choice-btn" onclick="checkAnswer(32, 'D')">D) (1, -3)</button>
+                    </div>
+                    <span class="result-inline" id="result32"></span>
+                </div>
+
+                <div class="independent-problem" id="problem33">
+                    <p><strong>33.</strong> Point H(5, 2) is translated 2 units down, then reflected over the y-axis. What are the final coordinates?</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(33, 'A')">A) (-5, 0)</button>
+                        <button class="choice-btn" onclick="checkAnswer(33, 'B')">B) (5, 0)</button>
+                        <button class="choice-btn" onclick="checkAnswer(33, 'C')">C) (-5, 4)</button>
+                        <button class="choice-btn" onclick="checkAnswer(33, 'D')">D) (-5, 2)</button>
+                    </div>
+                    <span class="result-inline" id="result33"></span>
+                </div>
+
+                <div class="independent-problem" id="problem34">
+                    <p><strong>34.</strong> Point I(0, 4) is rotated 90° clockwise about the origin, then translated 3 units up. What are the final coordinates?</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(34, 'A')">A) (4, 0)</button>
+                        <button class="choice-btn" onclick="checkAnswer(34, 'B')">B) (-4, 3)</button>
+                        <button class="choice-btn" onclick="checkAnswer(34, 'C')">C) (4, 3)</button>
+                        <button class="choice-btn" onclick="checkAnswer(34, 'D')">D) (0, 7)</button>
+                    </div>
+                    <span class="result-inline" id="result34"></span>
+                </div>
+
+                <div class="independent-problem" id="problem35">
+                    <p><strong>35.</strong> Point J(3, -1) is reflected over the x-axis, then translated 4 units left. What are the final coordinates?</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(35, 'A')">A) (7, 1)</button>
+                        <button class="choice-btn" onclick="checkAnswer(35, 'B')">B) (-1, -1)</button>
+                        <button class="choice-btn" onclick="checkAnswer(35, 'C')">C) (-1, 1)</button>
+                        <button class="choice-btn" onclick="checkAnswer(35, 'D')">D) (3, 1)</button>
+                    </div>
+                    <span class="result-inline" id="result35"></span>
+                </div>
+
+                <!-- ==================== TOPIC 8: Weighted Average of Points on a Line (36.B) ==================== -->
+                <div class="topic-header">
+                    <h3>Topic 8: Weighted Average of Points on a Line</h3>
+                    <span class="standard-badge">MA.912.GR.3.1</span>
+                </div>
+
+                <div class="independent-problem" id="problem36">
+                    <p><strong>36.</strong> Points A and B are at 2 and 10 on a number line. Find the weighted average with weights 3:1 (A:B). [Formula: (3×2 + 1×10)/(3+1)]</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(36, 'A')">A) 6</button>
+                        <button class="choice-btn" onclick="checkAnswer(36, 'B')">B) 4</button>
+                        <button class="choice-btn" onclick="checkAnswer(36, 'C')">C) 8</button>
+                        <button class="choice-btn" onclick="checkAnswer(36, 'D')">D) 5</button>
+                    </div>
+                    <span class="result-inline" id="result36"></span>
+                </div>
+
+                <div class="independent-problem" id="problem37">
+                    <p><strong>37.</strong> Point P divides segment AB in the ratio 1:3 from A. If A is at 0 and B is at 12, where is P?</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(37, 'A')">A) 4</button>
+                        <button class="choice-btn" onclick="checkAnswer(37, 'B')">B) 3</button>
+                        <button class="choice-btn" onclick="checkAnswer(37, 'C')">C) 9</button>
+                        <button class="choice-btn" onclick="checkAnswer(37, 'D')">D) 6</button>
+                    </div>
+                    <span class="result-inline" id="result37"></span>
+                </div>
+
+                <div class="independent-problem" id="problem38">
+                    <p><strong>38.</strong> Points C and D are at -4 and 8 on a number line. Find the point that divides CD in ratio 1:1 (the midpoint).</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(38, 'A')">A) 4</button>
+                        <button class="choice-btn" onclick="checkAnswer(38, 'B')">B) 0</button>
+                        <button class="choice-btn" onclick="checkAnswer(38, 'C')">C) 2</button>
+                        <button class="choice-btn" onclick="checkAnswer(38, 'D')">D) 6</button>
+                    </div>
+                    <span class="result-inline" id="result38"></span>
+                </div>
+
+                <div class="independent-problem" id="problem39">
+                    <p><strong>39.</strong> Point Q divides segment RS in ratio 2:3 from R. If R is at 5 and S is at 15, where is Q?</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(39, 'A')">A) 10</button>
+                        <button class="choice-btn" onclick="checkAnswer(39, 'B')">B) 11</button>
+                        <button class="choice-btn" onclick="checkAnswer(39, 'C')">C) 9</button>
+                        <button class="choice-btn" onclick="checkAnswer(39, 'D')">D) 7</button>
+                    </div>
+                    <span class="result-inline" id="result39"></span>
+                </div>
+
+                <div class="independent-problem" id="problem40">
+                    <p><strong>40.</strong> Points E and F are at 0 and 20. Find the weighted average with weights 1:4 (E:F). [Formula: (1×0 + 4×20)/(1+4)]</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(40, 'A')">A) 10</button>
+                        <button class="choice-btn" onclick="checkAnswer(40, 'B')">B) 4</button>
+                        <button class="choice-btn" onclick="checkAnswer(40, 'C')">C) 16</button>
+                        <button class="choice-btn" onclick="checkAnswer(40, 'D')">D) 5</button>
+                    </div>
+                    <span class="result-inline" id="result40"></span>
+                </div>
+
+                <!-- ==================== TOPIC 9: Distance and Midpoint Formulas (37.B) ==================== -->
+                <div class="topic-header">
+                    <h3>Topic 9: Distance and Midpoint Formulas</h3>
+                    <span class="standard-badge">MA.912.GR.3.2</span>
+                </div>
+
+                <div class="independent-problem" id="problem41">
+                    <p><strong>41.</strong> Find the distance between points (1, 2) and (4, 6). [Use: d = √((4-1)² + (6-2)²)]</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(41, 'A')">A) 7</button>
+                        <button class="choice-btn" onclick="checkAnswer(41, 'B')">B) 25</button>
+                        <button class="choice-btn" onclick="checkAnswer(41, 'C')">C) 5</button>
+                        <button class="choice-btn" onclick="checkAnswer(41, 'D')">D) 3</button>
+                    </div>
+                    <span class="result-inline" id="result41"></span>
+                </div>
+
+                <div class="independent-problem" id="problem42">
+                    <p><strong>42.</strong> Find the midpoint of segment with endpoints (2, 8) and (6, 2).</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(42, 'A')">A) (8, 10)</button>
+                        <button class="choice-btn" onclick="checkAnswer(42, 'B')">B) (4, 5)</button>
+                        <button class="choice-btn" onclick="checkAnswer(42, 'C')">C) (4, 3)</button>
+                        <button class="choice-btn" onclick="checkAnswer(42, 'D')">D) (2, 5)</button>
+                    </div>
+                    <span class="result-inline" id="result42"></span>
+                </div>
+
+                <div class="independent-problem" id="problem43">
+                    <p><strong>43.</strong> Find the distance between points (0, 0) and (5, 12).</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(43, 'A')">A) 17</button>
+                        <button class="choice-btn" onclick="checkAnswer(43, 'B')">B) 13</button>
+                        <button class="choice-btn" onclick="checkAnswer(43, 'C')">C) 169</button>
+                        <button class="choice-btn" onclick="checkAnswer(43, 'D')">D) 7</button>
+                    </div>
+                    <span class="result-inline" id="result43"></span>
+                </div>
+
+                <div class="independent-problem" id="problem44">
+                    <p><strong>44.</strong> Find the midpoint of segment with endpoints (-3, 7) and (5, -1).</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(44, 'A')">A) (2, 6)</button>
+                        <button class="choice-btn" onclick="checkAnswer(44, 'B')">B) (1, 3)</button>
+                        <button class="choice-btn" onclick="checkAnswer(44, 'C')">C) (4, 4)</button>
+                        <button class="choice-btn" onclick="checkAnswer(44, 'D')">D) (1, 4)</button>
+                    </div>
+                    <span class="result-inline" id="result44"></span>
+                </div>
+
+                <div class="independent-problem" id="problem45">
+                    <p><strong>45.</strong> Line segment AB has midpoint M(3, 5). If A is at (1, 2), find the coordinates of B.</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(45, 'A')">A) (2, 3.5)</button>
+                        <button class="choice-btn" onclick="checkAnswer(45, 'B')">B) (4, 7)</button>
+                        <button class="choice-btn" onclick="checkAnswer(45, 'C')">C) (5, 8)</button>
+                        <button class="choice-btn" onclick="checkAnswer(45, 'D')">D) (2, 7)</button>
+                    </div>
+                    <span class="result-inline" id="result45"></span>
+                </div>
+
+                <!-- ==================== TOPIC 10: Classify Triangles and Quadrilaterals Using Coordinates (38.B) ==================== -->
+                <div class="topic-header">
+                    <h3>Topic 10: Classify Triangles and Quadrilaterals Using Coordinates</h3>
+                    <span class="standard-badge">MA.912.GR.3.2</span>
+                </div>
+
+                <div class="independent-problem" id="problem46">
+                    <p><strong>46.</strong> A triangle has vertices at A(0, 0), B(4, 0), and C(2, 3). AB = 4, AC = √13, BC = √13. This triangle is:</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(46, 'A')">A) Equilateral</button>
+                        <button class="choice-btn" onclick="checkAnswer(46, 'B')">B) Scalene</button>
+                        <button class="choice-btn" onclick="checkAnswer(46, 'C')">C) Isosceles</button>
+                        <button class="choice-btn" onclick="checkAnswer(46, 'D')">D) Right</button>
+                    </div>
+                    <span class="result-inline" id="result46"></span>
+                </div>
+
+                <div class="independent-problem" id="problem47">
+                    <p><strong>47.</strong> A quadrilateral has vertices A(0, 0), B(4, 0), C(4, 3), D(0, 3). AB = CD = 4, BC = AD = 3, all angles are 90°. This quadrilateral is a:</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(47, 'A')">A) Square</button>
+                        <button class="choice-btn" onclick="checkAnswer(47, 'B')">B) Rhombus</button>
+                        <button class="choice-btn" onclick="checkAnswer(47, 'C')">C) Rectangle</button>
+                        <button class="choice-btn" onclick="checkAnswer(47, 'D')">D) Trapezoid</button>
+                    </div>
+                    <span class="result-inline" id="result47"></span>
+                </div>
+
+                <div class="independent-problem" id="problem48">
+                    <p><strong>48.</strong> Triangle PQR has vertices P(0, 0), Q(6, 0), R(3, 3√3). If PQ = QR = PR = 6, this triangle is:</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(48, 'A')">A) Isosceles</button>
+                        <button class="choice-btn" onclick="checkAnswer(48, 'B')">B) Scalene</button>
+                        <button class="choice-btn" onclick="checkAnswer(48, 'C')">C) Equilateral</button>
+                        <button class="choice-btn" onclick="checkAnswer(48, 'D')">D) Right</button>
+                    </div>
+                    <span class="result-inline" id="result48"></span>
+                </div>
+
+                <div class="independent-problem" id="problem49">
+                    <p><strong>49.</strong> A triangle has sides 3, 4, and 5. Since 3² + 4² = 9 + 16 = 25 = 5², this triangle is:</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(49, 'A')">A) Acute</button>
+                        <button class="choice-btn" onclick="checkAnswer(49, 'B')">B) Obtuse</button>
+                        <button class="choice-btn" onclick="checkAnswer(49, 'C')">C) Equilateral</button>
+                        <button class="choice-btn" onclick="checkAnswer(49, 'D')">D) Right</button>
+                    </div>
+                    <span class="result-inline" id="result49"></span>
+                </div>
+
+                <div class="independent-problem" id="problem50">
+                    <p><strong>50.</strong> A quadrilateral has all four sides equal to 5 and all four angles equal to 90°. This quadrilateral is a:</p>
+                    <div class="choices">
+                        <button class="choice-btn" onclick="checkAnswer(50, 'A')">A) Rectangle (not square)</button>
+                        <button class="choice-btn" onclick="checkAnswer(50, 'B')">B) Rhombus (not square)</button>
+                        <button class="choice-btn" onclick="checkAnswer(50, 'C')">C) Square</button>
+                        <button class="choice-btn" onclick="checkAnswer(50, 'D')">D) Parallelogram</button>
+                    </div>
+                    <span class="result-inline" id="result50"></span>
                 </div>
             </div>
 
@@ -320,7 +650,7 @@
             <div class="final-results-box" id="finalResults" style="display: none;">
                 <div class="trophy-icon">&#x1F3AF;</div>
                 <h3>Review Complete!</h3>
-                <p class="final-score-text">Your Score: <span id="finalScoreNumber">0</span>/20</p>
+                <p class="final-score-text">Your Score: <span id="finalScoreNumber">0</span>/50</p>
                 <div class="score-breakdown">
                     <h4>Performance by Topic:</h4>
                     <div id="topicBreakdown"></div>
